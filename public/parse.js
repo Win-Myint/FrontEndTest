@@ -1,11 +1,15 @@
+var log = console.log;
+var $ = jQuery;
 var simulation_data = {};
 var agents = [];
 var charts = [];
 var geo = [];
 
+// Takes test.json string and returns JavaScript value.
 function parseJSON() {  
   $.getJSON("test.json", function(data) {
-    var clientData = jQuery.parseJSON( data.data );
+    var clientData = $.parseJSON( data.data );
+    // log(clientData);
     
     simulation_data.current = clientData.current;
     simulation_data.start = clientData.start;
@@ -13,9 +17,12 @@ function parseJSON() {
     simulation_data.play = clientData.play;
     simulation_data.tick = clientData.play;
     
-    var globalRestData = jQuery.parseJSON( clientData.global );
+    // Contains Object.global data
+    var globalRestData = $.parseJSON( clientData.global );
     
-    var hashmapData = jQuery.parseJSON( clientData.hashmap );
+    // Contains Object.hashmap data
+    var hashmapData = $.parseJSON( clientData.hashmap );
+    log(hashmapData[1]);
     
     var agentRestData = [];
     var graphRestData = [];
@@ -39,10 +46,14 @@ function parseJSON() {
     
     graphRestData = graphRestData.concat(globalRestData.graph);
     
+    // Contains manipulated Object.hashmap[0] data CONCATs with empty array (agentRestData)
     agents = agentRestData;
+
+    // Contains manipulated Object.hashmap[1] data CONCATs with empty array (agentRestData)
     charts = graphRestData;
+
+    // Contains manipulated Object.hashmap[2] data CONCATs with empty array (agentRestData)
     geo = geoRestData;
-    
-    alert("Agents: " + agents.length + " Charts: " + charts.length + " Geo: " + geo.length);
+
   });
 }
