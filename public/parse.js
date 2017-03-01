@@ -66,10 +66,18 @@ $(function () {
 
     // Store graph object inside hashmapData to a variable
     var chart = hashmapData[1];
+    var click = 0;
  
     // Assign onclick event to the button 
     // Invoke graph function and passed through charts' data
     $( "#graphBtn" ).click(function() {
+      if (click > 0){
+        location.reload();
+      }
+       click++;
+       if (click === 1){
+         document.getElementById("graphBtn").innerHTML = "reset";
+       }
        graphs(chart.graph);
     });
 
