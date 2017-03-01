@@ -1,4 +1,35 @@
-#graphBtn {
-	margin-left: 30px;
-	margin-top: 30px;
+
+body { 
+	padding-top: 40px;
+	background: #eee;
+}
+
+.btn-primary:hover {
+	opacity: 1;
+	box-shadow: 0 0 20px rgba(0,0,0,1.5);
+}
+
+
+canvas {
+	margin: 0 auto;
+}
+
+canvas {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+       -moz-transition: all 1s ease; /* Firefox */
+         -o-transition: all 1s ease; /* IE 9 */
+        -ms-transition: all 1s ease; /* Opera */
+            transition: all 1s ease;
+}
+
+canvas:hover {
+					margin-top: 15px;
+				 margin-bottom: 15px;
+box-shadow: 0 0 20px rgba(0,0,0,1.2);
+		      background-color: #fff;
+       -webkit-transform:scale(1.03); /* Safari and Chrome */
+          -moz-transform:scale(1.03); /* Firefox */
+           -ms-transform:scale(1.03); /* IE 9 */
+            -o-transform:scale(1.03); /* Opera */
+               transform:scale(1.03);
 }

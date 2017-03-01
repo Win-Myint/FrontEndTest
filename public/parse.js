@@ -76,7 +76,7 @@ $(function () {
       }
        click++;
        if (click === 1){
-         document.getElementById("graphBtn").innerHTML = "reset";
+         document.getElementById("graphBtn").innerHTML = "Reset Graph";
        }
        graphs(chart.graph);
     });
@@ -93,7 +93,7 @@ $(function () {
     function graphsDivElement(data, i){
         var id = "myChart" + i;
         var color = colorChange();
-        $("#main").append('<canvas id="'+id+'" width="400px" height="200px"></canvas>')
+        $("#main").append('<canvas id="'+id+'" width="800px" height="400px"></canvas>')
         chartGraph(id,data,color)
     }
 
