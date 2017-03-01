@@ -1,0 +1,24 @@
+{
+  "name": "FrontEndTest",
+  "version": "1.0.0",
+  "description": "Manipulating JSON data using jQuery and chart.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Win-Myint/FrontEndTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Win-Myint/FrontEndTest/issues"
+  },
+  "homepage": "https://github.com/Win-Myint/FrontEndTest#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0"
+  }
+}
