@@ -1,6 +1,5 @@
-
 body { 
-	padding-top: 40px;
+	padding: 30px 0px;
 	background: #eee;
 }
 
@@ -8,7 +7,6 @@ body {
 	opacity: 1;
 	box-shadow: 0 0 20px rgba(0,0,0,1.5);
 }
-
 
 canvas {
 	margin: 0 auto;
@@ -23,10 +21,10 @@ canvas {
 }
 
 canvas:hover {
-					margin-top: 15px;
-				 margin-bottom: 15px;
+					          margin-top: 15px;
+				         margin-bottom: 15px;
 box-shadow: 0 0 20px rgba(0,0,0,1.2);
-		      background-color: #fff;
+		          background-color: #fff;
        -webkit-transform:scale(1.03); /* Safari and Chrome */
           -moz-transform:scale(1.03); /* Firefox */
            -ms-transform:scale(1.03); /* IE 9 */

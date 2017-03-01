@@ -1,4 +1,4 @@
-var log 	 = console.log;
+var log      = console.log;
 
 // Require express 
 var express  = require('express');
@@ -18,7 +18,3 @@ var get 	 = function(req, res) {
 server.get('/', get);
 
 server.listen(port, callback);
-
-
-
-
